@@ -1,0 +1,22 @@
+import React, { PropsWithChildren } from 'react';
+import styled from 'styled-components';
+
+interface props {
+  style?: React.CSSProperties,
+  
+};
+
+const ConponentName : React.FC<PropsWithChildren<props>> = () => {
+
+  return (
+    <Wrapper data-css='ConponentName'>
+      ConponentName
+    </Wrapper>
+  )
+}
+
+export default ConponentName;
+
+const Wrapper = styled.div`
+
+`;

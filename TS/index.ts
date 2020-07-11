@@ -1,15 +1,16 @@
 import fs from 'fs';
 import path from 'path'; 
+import { Command } from 'commander';
 
-console.log('path', path.dirname('/src'))
+const program = new Command;
 
-fs.mkdir(path.join(__dirname, ''), (err) => { 
-  if (err) { 
-    if(err.code === 'EEXIST') {
-      console.log('directory exist')
-      return
-    }
-    return console.error(err); 
-  } 
-  console.log('Directory created successfully!'); 
-});
+program
+  .version('0.0.1')
+  .arguments('<componentName>')
+  .parse(process.argv);
+
+  const [componentName] = program.args;
+
+  console.log('componentName', componentName)
+  const templatePath : string = './template.txt';
+  console.log('program.dir', program.dir)
