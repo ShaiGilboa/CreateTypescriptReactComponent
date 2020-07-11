@@ -1,0 +1,15 @@
+{
+  "name": "CreateTypescriptReactComponent",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "ShaiGilboa",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^14.0.22",
+    "typescript": "^3.9.6"
+  },
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "path": "^0.12.7"
+  }
+}
